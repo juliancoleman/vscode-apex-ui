@@ -1,0 +1,101 @@
+{
+  "name": "Apex",
+  "type": "light",
+  "colors": {
+    "activityBar.background": "#fff",
+    "activityBar.foreground": "#212529",
+    "activityBar.border": "#f1f3f5",
+
+    "activityBarBadge.background": "#00baff",
+    "activityBarBadge.foreground": "#e8f7ff",
+
+    "editor.background": "#fff",
+    "editor.foreground": "#495057",
+    "editor.selectionBackground": "#f1f3f5",
+    "editor.lineHighlightBackground": "#e8f7ff",
+    "editor.findMatchBorder": "#1862ab",
+    "editor.findMatchBackground": "#f1f3f5",
+    "editor.findMatchHighlightBorder": "#329af0",
+    "editor.findMatchHighlightBackground": "#f1f3f5",
+
+    "editorBracketMatch.background": "#e8f7ff",
+    "editorBracketMatch.border": "#0097e8",
+
+    "editorCursor.foreground": "#00baff",
+
+    "editorGutter.addedBackground": "#00baff",
+    "editorGutter.modifiedBackground": "#00baff",
+    // "editorGutter.modifiedBackground": "#12b886",
+    "editorGutter.deletedBackground": "#e6498088",
+
+    "editorIndentGuide.background": "#adb5bd",
+
+    "editorLineNumber.foreground": "#adb5bd",
+    "editorLineNumber.activeForeground": "#212529",
+
+    "gitDecoration.addedResourceForeground": "#12b886",
+    "gitDecoration.modifiedResourceForeground": "#fd7e14",
+    "gitDecoration.deletedResourceForeground": "#fa5252",
+    "gitDecoration.ignoredResourceForeground": "#868e96",
+
+    "sideBar.background": "#fff",
+    "sideBar.foreground": "#000",
+    "sideBar.border": "#f1f3f5",
+    "sideBar.dropBackground": "#e8f7ff",
+
+    "sideBarSectionHeader.background": "#fff",
+    "sideBarSectionHeader.border": "#212529",
+    "sideBarSectionHeader.foreground": "#495057",
+
+    "sideBarTitle.foreground": "#000",
+
+    "statusBar.background": "#fff",
+    "statusBar.foreground": "#495057",
+    "statusBar.border": "#f1f3f5",
+
+    "tab.activeBorderTop": "#212529",
+    "tab.activeForeground": "#212529",
+    "tab.inactiveForeground": "#868e96",
+
+    "titleBar.border": "#fff",
+    "titleBar.activeBackground": "#fff",
+    "titleBar.inactiveBackground": "#fff",
+    "titleBar.activeForeground": "#fff",
+  },
+  "tokenColors": [
+    {
+      "scope": "string",
+      "settings": {
+        "foreground": "#868e96"
+      }
+    },
+    {
+      "scope": "comment",
+      "settings": {
+        "foreground": "#adb5bd"
+      }
+    },
+    // CSS
+    // This is a 1:1 of the CSS styles. But the example
+    // image doesn't have bold property names, so, yeah.
+    // {
+    //   "scope": "support.type.property-name",
+    //   "settings": {
+    //     "fontStyle": "bold"
+    //   }
+    // },
+    {
+      "scope": ["entity.name.selector", "meta.selector"],
+      "settings": {
+        "foreground": "#202123",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "meta.property-value.css",
+      "settings": {
+        "foreground": "#868e96"
+      }
+    }
+  ]
+}
