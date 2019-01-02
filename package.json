@@ -3,6 +3,8 @@
     "displayName": "apex-ui",
     "description": "Apex monochrome VSCode theme UI.",
     "version": "0.0.1",
+    "publisher": "jesussaves",
+    "repository": "https://github.com/juliancoleman/vscode-apex-ui",
     "engines": {
         "vscode": "^1.30.0"
     },
