@@ -30,3 +30,5 @@ Add the following configuration to the end of your `settings.json`.
 * Grayscale on editor unfocus.
 * Style the Editor Suggest Widget.
 * Style the Source Control (in the Activity Bar) added/modified/removed/etc.
+
+###### Original [Apex UI](https://github.com/apex/apex-ui) and [Apex Syntax](https://github.com/apex/apex-syntax) theme by [TJ](https://github.com/tj)
