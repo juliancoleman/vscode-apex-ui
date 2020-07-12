@@ -6,12 +6,12 @@
     "editor.background": "#fff",
     "editor.foreground": "#495057",
     // "editor.wrapGuide": "", <- find this?
-    "editorIndentGuide.background": "#adb5db99", // Fade by some factor to distinguish active indent
-    "editorIndentGuide.activeBackground": "#adb5db", // Fade this out, too
-    "editorWhitespace.foreground": "#adb5db99", // This looks like butt. Fade it out more.
-    "editorCursor.background": "#fff", // maybe make this a fade of the cursor color...
+    "editorIndentGuide.background": "#adb5db99",
+    "editorIndentGuide.activeBackground": "#adb5db",
+    "editorWhitespace.foreground": "#adb5db99",
+    "editorCursor.background": "#fff",
     "editorGutter.background": "#fff",
-    "editorLineNumber.foreground": "#adb5db99",
+    "editorLineNumber.foreground": "#868e964f", // adjusted from #adb5db (value from spec, but appears purple-ish in VSCode)
     "editorLineNumber.activeForeground": "#21252999", // only applies when "editor.renderLineHighlight" is set to `all` or `gutter`
     "editor.lineHighlightBackground": "#fff", // .cursor-line-no-selection @syntax-gutter-text-color-selected at fade 3%
     "editorGutter.foldingControlForeground": "#495057",
@@ -114,7 +114,7 @@
       "name": "Comments",
       "scope": "comment",
       "settings": {
-        "foreground": "#adb5db99",
+        "foreground": "#868e9699",
       }
     },
     {
