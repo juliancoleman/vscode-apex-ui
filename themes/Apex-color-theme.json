@@ -15,8 +15,8 @@
     "editorLineNumber.activeForeground": "#21252999", // only applies when "editor.renderLineHighlight" is set to `all` or `gutter`
     "editor.lineHighlightBackground": "#fff", // .cursor-line-no-selection @syntax-gutter-text-color-selected at fade 3%
     "editorGutter.foldingControlForeground": "#495057",
-    "editorCursor.foreground": "#00baff",
-    "terminalCursor.foreground": "#00baff",
+    "editorCursor.foreground": "#00b1f3",
+    "terminalCursor.foreground": "#00b1f3",
     "editor.selectionBackground": "#21252911", // adjusted from #f8f9fa (value from spec, but too light in VSCode)
     "searchEditor.findMatchBackground": "#fff",
     "searchEditor.findMatchBorder": "#1862ab",
@@ -28,16 +28,16 @@
     "editorBracketMatch.background": "#e8f7ff",
     "editorBracketMatch.border": "#0097e8",
     // Apex UI styles
-    "scrollbarSlider.background": "#f8f9fa",
+    "scrollbarSlider.background": "#e9ecef",
     "scrollbar.shadow": "#f8f9fa",
-    "scrollbarSlider.hoverBackground": "#f8f9fa",
+    "scrollbarSlider.hoverBackground": "#e9ecef",
     "scrollbarSlider.activeBackground": "#e9ecef",
     "button.foreground": "#2f343a",
     "button.background": "#fff", // do something with these... make them prettier/stand out more.
     "button.hoverBackground": "#fff", // do something with these... make them prettier/stand out more.
     "panel.border": "#f8f9fa",
     "activityBar.border": "#f8f9fa",
-    "focusBorder": "#212529",
+    "focusBorder": "#fff", // adjusted from #212529 (value from spec, but doesn't fit "minimal" vibe)
     "statusBar.border": "#f8f9fa",
     "gitDecoration.addedResourceForeground": "#212529",
     "editorGutter.addedBackground": "#228ae699",
@@ -51,9 +51,12 @@
     "editorSuggestWidget.highlightForeground": "#212529", // this is the best I can do since I can't edit the border color of the autocomplete range.
     "editorSuggestWidget.selectedBackground": "#f8f9fa", // currently there seems to be no way to add a border-bottom like Apex does on Atom
     "quickInput.background": "#f8f9faf2",
-    "quickInput.foreground": "#adb5db99",
+    "quickInput.foreground": "#adb5db",
     "list.focusBackground": "#fff",
     "list.focusForeground": "#212529",
+    "list.inactiveSelectionBackground": "#fff",
+    "list.activeSelectionBackground": "#ffffff",
+    "list.activeSelectionForeground": "#212529",
     "statusBar.background": "#fff",
     "statusBar.noFolderBackground": "#fff",
     "statusBar.foreground": "#2f343a",
@@ -74,15 +77,22 @@
     "activityBar.foreground": "#202123",
     "activityBar.activeBackground": "#f8f9fa",
     "activityBar.inactiveForeground": "#adb5db99",
-    "activityBarBadge.background": "#00baff",
+    "activityBarBadge.background": "#00b1f3",
     "activityBarBadge.foreground": "#fff",
-    "badge.background": "#00baff",
+    "badge.background": "#00b1f3",
     "badge.foreground": "#fff",
     "input.background": "#f8f9fa",
     "dropdown.background": "#f8f9fa",
     "dropdown.border": "#f8f9fa",
     "settings.dropdownBorder": "#f8f9fa",
     "settings.headerForeground": "#495057",
+    "titleBar.activeBackground": "#fff",
+    "titleBar.inactiveBackground": "#fff",
+    "titleBar.inactiveForeground": "#202123",
+    "titleBar.activeForeground": "#202123",
+    "sideBarSectionHeader.background": "#fff",
+    "sideBarSectionHeader.foreground": "#868e96",
+    "sideBarSectionHeader.border": "#f1f3f5",
   },
   "tokenColors": [
     // Apex Syntax styles

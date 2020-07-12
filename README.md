@@ -4,7 +4,7 @@
 
 Apex monochrome VSCode theme UI and Syntax.
 
-###### Based on [apex-ui](https://github.com/apex/apex-ui)
+## Based on [apex-ui](https://github.com/apex/apex-ui)
 
 ## Usage
 
@@ -27,4 +27,4 @@ Add the following configuration to the end of your `settings.json`.
 
 Or remove the `backgroundColor` property with the Dark theme.
 
-###### Original [Apex UI](https://github.com/apex/apex-ui) and [Apex Syntax](https://github.com/apex/apex-syntax) theme by [TJ](https://github.com/tj)
+## Original [Apex UI](https://github.com/apex/apex-ui) and [Apex Syntax](https://github.com/apex/apex-syntax) theme by [TJ](https://github.com/tj)

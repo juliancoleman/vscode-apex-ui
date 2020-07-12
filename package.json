@@ -20,8 +20,13 @@
             },
             {
                 "label": "Apex Dark",
-                "uiTheme": "vs",
+                "uiTheme": "vs-dark",
                 "path": "./themes/Apex Dark-color-theme.json"
+            },
+            {
+                "label": "iA Writer",
+                "uiTheme": "vs-dark",
+                "path": "./themes/iA Writer-color-theme.json"
             }
         ]
     }

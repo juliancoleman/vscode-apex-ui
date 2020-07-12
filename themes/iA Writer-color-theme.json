@@ -2,36 +2,36 @@
   "name": "Apex",
   "type": "dark",
   "colors": {
-    "editor.background": "#202123",
+    "editor.background": "#141414",
     "editor.foreground": "#fff",
     // "editor.wrapGuide": "", <- find this?
-    "editorIndentGuide.background": "#adb5db30", // Fade by some factor to distinguish active indent
-    "editorIndentGuide.activeBackground": "#adb5db99", // Fade this out, too
-    "editorWhitespace.foreground": "#adb5db30", // This looks like butt. Fade it out more.
-    "editorCursor.background": "#202123", // maybe make this a fade of the cursor color...
-    "editorGutter.background": "#202123",
+    "editorIndentGuide.background": "#6968687f", // Fade by some factor to distinguish active indent
+    "editorIndentGuide.activeBackground": "#696868", // Fade this out, too
+    "editorWhitespace.foreground": "#6968687f", // This looks like butt. Fade it out more.
+    "editorCursor.background": "#141414", // maybe make this a fade of the cursor color...
+    "editorGutter.background": "#141414",
     "editorLineNumber.foreground": "#adb5db4f",
     "editorLineNumber.activeForeground": "#e9ecef", // only applies when "editor.renderLineHighlight" is set to `all` or `gutter`
-    "editor.lineHighlightBackground": "#202123", // .cursor-line-no-selection @syntax-gutter-text-color-selected at fade 3%
+    "editor.lineHighlightBackground": "#141414", // .cursor-line-no-selection @syntax-gutter-text-color-selected at fade 3%
     "editorGutter.foldingControlForeground": "#495057",
-    "editorCursor.foreground": "#00baff",
-    "terminalCursor.foreground": "#00baff",
+    "editorCursor.foreground": "#00b1f3",
+    "terminalCursor.foreground": "#00b1f3",
     "editor.selectionBackground": "#f8f9fa11", // adjusted from #f8f9fa (value from spec, but too light in VSCode)
-    "searchEditor.findMatchBackground": "#202123",
+    "searchEditor.findMatchBackground": "#141414",
     "searchEditor.findMatchBorder": "#1862ab",
-    "editor.rangeHighlightBackground": "#202123",
-    "editor.findMatchBackground": "#202123",
+    "editor.rangeHighlightBackground": "#141414",
+    "editor.findMatchBackground": "#141414",
     "editor.findMatchBorder": "#1862ab",
-    "editor.findMatchHighlightBackground": "#202123",
+    "editor.findMatchHighlightBackground": "#141414",
     "editor.findMatchHighlightBorder": "#329af0",
     "editorBracketMatch.border": "#0097e8",
-    "scrollbarSlider.background": "#495057",
-    "scrollbar.shadow": "#212529",
-    "scrollbarSlider.hoverBackground": "#495057",
-    "scrollbarSlider.activeBackground": "#495057",
+    "scrollbarSlider.background": "#2f2f2f",
+    "scrollbar.shadow": "#202123",
+    "scrollbarSlider.hoverBackground": "#2f2f2f",
+    "scrollbarSlider.activeBackground": "#2f2f2f",
     "button.foreground": "#2f343a",
-    "button.background": "#202123", // do something with these... make them prettier/stand out more.
-    "button.hoverBackground": "#202123", // do something with these... make them prettier/stand out more.
+    "button.background": "#141414", // do something with these... make them prettier/stand out more.
+    "button.hoverBackground": "#141414", // do something with these... make them prettier/stand out more.
     "panel.border": "#212529",
     "activityBar.border": "#212529",
     "focusBorder": "#212529",
@@ -44,54 +44,54 @@
     "gitDecoration.deletedResourceForeground": "#fa5252",
     "editorGutter.deletedBackground": "#e6498099",
     "gitDecoration.untrackedResourceForeground": "#228ae6",
-    "editorSuggestWidget.background": "#212529",
+    "editorSuggestWidget.background": "#202020",
+    "editorSuggestWidget.foreground": "#f8f9fa99",
     "editorSuggestWidget.highlightForeground": "#f8f9fa", // this is the best I can do since I can't edit the border color of the autocomplete range.
-    "editorSuggestWidget.selectedBackground": "#2f343a", // currently there seems to be no way to add a border-bottom like Apex does on Atom
-    "editorSuggestWidget.foreground": "#868e96",
-    "quickInput.background": "#202123",
+    "editorSuggestWidget.selectedBackground": "#212529", // currently there seems to be no way to add a border-bottom like Apex does on Atom
+    "quickInput.background": "#202020",
     "quickInput.foreground": "#adb5db99",
     "list.focusBackground": "#212529",
     "list.focusForeground": "#fff",
     "list.hoverBackground": "#212529",
-    "list.activeSelectionBackground": "#202123",
-    "list.inactiveSelectionBackground": "#202123",
-    "statusBar.background": "#202123",
+    "list.activeSelectionBackground": "#141414",
+    "list.inactiveSelectionBackground": "#141414",
+    "statusBar.background": "#141414",
     "statusBar.noFolderBackground": "#fff",
     "statusBar.foreground": "#f8f9fa",
     "statusBar.noFolderForeground": "#2f343a",
     "tab.activeBorderTop": "#f8f9fa",
     "tab.activeForeground": "#fff",
     "tab.inactiveForeground": "#868e9699",
-    "tab.inactiveBackground": "#202123",
-    "tab.border": "#202123",
-    "editorGroupHeader.tabsBackground": "#202123",
-    "tree.indentGuidesStroke": "#202123",
-    "sideBar.background": "#202123",
+    "tab.inactiveBackground": "#141414",
+    "tab.border": "#141414",
+    "editorGroupHeader.tabsBackground": "#141414",
+    "tree.indentGuidesStroke": "#141414",
+    "sideBar.background": "#141414",
     "sideBar.border": "#212529",
     "sideBar.foreground": "#f8f9fa",
-    "selection.background": "#adb5db30",
-    "activityBar.background": "#202123",
+    "selection.background": "#f8f9fa30",
+    "activityBar.background": "#141414",
     "activityBar.foreground": "#f8f9fa",
     "activityBar.activeBackground": "#212529",
     "activityBar.inactiveForeground": "#adb5db99",
-    "activityBarBadge.background": "#00baff",
+    "activityBarBadge.background": "#00b1f3",
     "activityBarBadge.foreground": "#fff",
-    "badge.background": "#00baff",
-    "badge.foreground": "#202123",
-    "input.background": "#2f343a",
+    "badge.background": "#00b1f3",
+    "badge.foreground": "#141414",
+    "input.background": "#2f2f2f",
     "input.foreground": "#adb5db",
-    "dropdown.background": "#2f343a",
+    "dropdown.background": "#2f2f2f",
     "dropdown.border": "#adb5db",
     "dropdown.foreground": "#adb5db",
     "settings.dropdownBorder": "#2f343a",
     "settings.headerForeground": "#495057",
-    "titleBar.activeBackground": "#202123",
-    "titleBar.inactiveBackground": "#202123",
+    "titleBar.activeBackground": "#141414",
+    "titleBar.inactiveBackground": "#141414",
     "titleBar.activeForeground": "#fff",
-    "sideBarSectionHeader.background": "#202123",
+    "sideBarSectionHeader.background": "#141414",
     "sideBarSectionHeader.foreground": "#868e96",
-    "sideBarSectionHeader.border": "#212529",
-    "editorWidget.background": "#212529"
+    "sideBarSectionHeader.border": "#202020",
+    "editorWidget.background": "#202020"
   },
   "tokenColors": [
     {
@@ -112,7 +112,7 @@
       "name": "Comments",
       "scope": "comment",
       "settings": {
-        "foreground": "#adb5db4f",
+        "foreground": "#696868",
       }
     },
     {
