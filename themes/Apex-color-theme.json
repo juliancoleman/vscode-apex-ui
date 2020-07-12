@@ -2,100 +2,152 @@
   "name": "Apex",
   "type": "light",
   "colors": {
-    "activityBar.background": "#fff",
-    "activityBar.foreground": "#212529",
-    "activityBar.border": "#f1f3f5",
-
-    "activityBarBadge.background": "#00baff",
-    "activityBarBadge.foreground": "#e8f7ff",
-
+    // Apex Syntax styles
     "editor.background": "#fff",
     "editor.foreground": "#495057",
-    "editor.selectionBackground": "#f1f3f5",
-    "editor.lineHighlightBackground": "#e8f7ff",
+    // "editor.wrapGuide": "", <- find this?
+    "editorIndentGuide.background": "#adb5db99", // Fade by some factor to distinguish active indent
+    "editorIndentGuide.activeBackground": "#adb5db", // Fade this out, too
+    "editorWhitespace.foreground": "#adb5db99", // This looks like butt. Fade it out more.
+    "editorCursor.background": "#fff", // maybe make this a fade of the cursor color...
+    "editorGutter.background": "#fff",
+    "editorLineNumber.foreground": "#adb5db99",
+    "editorLineNumber.activeForeground": "#21252999", // only applies when "editor.renderLineHighlight" is set to `all` or `gutter`
+    "editor.lineHighlightBackground": "#fff", // .cursor-line-no-selection @syntax-gutter-text-color-selected at fade 3%
+    "editorGutter.foldingControlForeground": "#495057",
+    "editorCursor.foreground": "#00baff",
+    "terminalCursor.foreground": "#00baff",
+    "editor.selectionBackground": "#21252911", // adjusted from #f8f9fa (value from spec, but too light in VSCode)
+    "searchEditor.findMatchBackground": "#fff",
+    "searchEditor.findMatchBorder": "#1862ab",
+    "editor.rangeHighlightBackground": "#fff",
+    "editor.findMatchBackground": "#fff",
     "editor.findMatchBorder": "#1862ab",
-    "editor.findMatchBackground": "#f1f3f5",
+    "editor.findMatchHighlightBackground": "#fff",
     "editor.findMatchHighlightBorder": "#329af0",
-    "editor.findMatchHighlightBackground": "#f1f3f5",
-
     "editorBracketMatch.background": "#e8f7ff",
     "editorBracketMatch.border": "#0097e8",
-
-    "editorCursor.foreground": "#00baff",
-
-    "editorGutter.addedBackground": "#00baff",
-    "editorGutter.modifiedBackground": "#00baff",
-    // "editorGutter.modifiedBackground": "#12b886",
-    "editorGutter.deletedBackground": "#e6498088",
-
-    "editorIndentGuide.background": "#adb5bd",
-
-    "editorLineNumber.foreground": "#adb5bd",
-    "editorLineNumber.activeForeground": "#212529",
-
-    "gitDecoration.addedResourceForeground": "#12b886",
-    "gitDecoration.modifiedResourceForeground": "#fd7e14",
-    "gitDecoration.deletedResourceForeground": "#fa5252",
+    // Apex UI styles
+    "scrollbarSlider.background": "#f8f9fa",
+    "scrollbar.shadow": "#f8f9fa",
+    "scrollbarSlider.hoverBackground": "#f8f9fa",
+    "scrollbarSlider.activeBackground": "#e9ecef",
+    "button.foreground": "#2f343a",
+    "button.background": "#fff", // do something with these... make them prettier/stand out more.
+    "button.hoverBackground": "#fff", // do something with these... make them prettier/stand out more.
+    "panel.border": "#f8f9fa",
+    "activityBar.border": "#f8f9fa",
+    "focusBorder": "#212529",
+    "statusBar.border": "#f8f9fa",
+    "gitDecoration.addedResourceForeground": "#212529",
+    "editorGutter.addedBackground": "#228ae699",
     "gitDecoration.ignoredResourceForeground": "#868e96",
-
-    "sideBar.background": "#fff",
-    "sideBar.foreground": "#000",
-    "sideBar.border": "#f1f3f5",
-    "sideBar.dropBackground": "#e8f7ff",
-
-    "sideBarSectionHeader.background": "#fff",
-    "sideBarSectionHeader.border": "#212529",
-    "sideBarSectionHeader.foreground": "#495057",
-
-    "sideBarTitle.foreground": "#000",
-
+    "gitDecoration.modifiedResourceForeground": "#12b886",
+    "editorGutter.modifiedBackground": "#228ae699",
+    "gitDecoration.deletedResourceForeground": "#fa5252",
+    "editorGutter.deletedBackground": "#e6498099",
+    "gitDecoration.untrackedResourceForeground": "#228ae6",
+    "editorSuggestWidget.background": "#fff",
+    "editorSuggestWidget.highlightForeground": "#212529", // this is the best I can do since I can't edit the border color of the autocomplete range.
+    "editorSuggestWidget.selectedBackground": "#f8f9fa", // currently there seems to be no way to add a border-bottom like Apex does on Atom
+    "quickInput.background": "#f8f9faf2",
+    "quickInput.foreground": "#adb5db99",
+    "list.focusBackground": "#fff",
+    "list.focusForeground": "#212529",
     "statusBar.background": "#fff",
-    "statusBar.foreground": "#495057",
-    "statusBar.border": "#f1f3f5",
-
+    "statusBar.noFolderBackground": "#fff",
+    "statusBar.foreground": "#2f343a",
+    "statusBar.noFolderForeground": "#2f343a",
     "tab.activeBorderTop": "#212529",
     "tab.activeForeground": "#212529",
-    "tab.inactiveForeground": "#868e96",
-
-    "titleBar.border": "#fff",
-    "titleBar.activeBackground": "#fff",
-    "titleBar.inactiveBackground": "#fff",
-    "titleBar.activeForeground": "#fff",
+    "tab.inactiveForeground": "#868e9699",
+    "tab.inactiveBackground": "#fff",
+    "tab.border": "#fff",
+    "editorGroupHeader.tabsBackground": "#fff",
+    "tree.indentGuidesStroke": "#fff",
+    "sideBar.background": "#fff",
+    "sideBar.border": "#f8f9fa",
+    "sideBar.foreground": "#2f343a",
+    // Additional styles (not from original spec)
+    "selection.background": "#21252911",
+    "activityBar.background": "#fff",
+    "activityBar.foreground": "#202123",
+    "activityBar.activeBackground": "#f8f9fa",
+    "activityBar.inactiveForeground": "#adb5db99",
+    "activityBarBadge.background": "#00baff",
+    "activityBarBadge.foreground": "#fff",
+    "badge.background": "#00baff",
+    "badge.foreground": "#fff",
+    "input.background": "#f8f9fa",
+    "dropdown.background": "#f8f9fa",
+    "dropdown.border": "#f8f9fa",
+    "settings.dropdownBorder": "#f8f9fa",
+    "settings.headerForeground": "#495057",
   },
   "tokenColors": [
+    // Apex Syntax styles
     {
+      "name": "Bolded tokens",
+      "scope": ["meta.selector", "meta.at-rule"],
+      "settings": {
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "String primitives",
       "scope": "string",
       "settings": {
-        "foreground": "#868e96"
+        "foreground": "#868e96",
       }
     },
     {
+      "name": "Comments",
       "scope": "comment",
       "settings": {
-        "foreground": "#adb5bd"
+        "foreground": "#adb5db99",
       }
     },
-    // CSS
-    // This is a 1:1 of the CSS styles. But the example
-    // image doesn't have bold property names, so, yeah.
-    // {
-    //   "scope": "support.type.property-name",
-    //   "settings": {
-    //     "fontStyle": "bold"
-    //   }
-    // },
     {
-      "scope": ["entity.name.selector", "meta.selector"],
+      "name": "Bold",
+      "scope": "markup.bold",
+      "settings": {
+        "foreground": "#495057",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Italic",
+      "scope": "markup.italic",
+      "settings": {
+        "foreground": "#495057",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "CSS Selectors",
+      "scope": "meta.selector",
       "settings": {
         "foreground": "#202123",
         "fontStyle": "bold"
       }
     },
     {
-      "scope": "meta.property-value.css",
+      "name": "CSS Properties",
+      "scope": "meta.property-value",
       "settings": {
-        "foreground": "#868e96"
+        "foreground": "#868e96",
+        "fontStyle": "" // this overrides the above `bold` style for css functions as values
       }
-    }
+    },
+    {
+      "name": "Markdown heading marker",
+      "scope": "markup.heading",
+      "settings": {
+        "foreground": "#202123",
+        "fontStyle": "bold"
+      }
+    },
+    // Apex UI styles
+    // I guess there are none...
   ]
 }

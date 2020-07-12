@@ -1,9 +1,9 @@
 {
-    "name": "apex-ui",
-    "displayName": "apex-ui",
+    "name": "apex",
+    "displayName": "apex",
     "description": "Apex monochrome VSCode theme UI.",
     "version": "0.0.1",
-    "publisher": "jesussaves",
+    "publisher": "juliancoleman",
     "repository": "https://github.com/juliancoleman/vscode-apex-ui",
     "engines": {
         "vscode": "^1.30.0"

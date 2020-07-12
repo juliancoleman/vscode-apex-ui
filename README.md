@@ -1,4 +1,4 @@
-# README
+# README.md
 
 Apex monochrome VSCode theme UI and Syntax.
 
@@ -13,6 +13,7 @@ Pair with the following extensions for the best results:
 Add the following configuration to the end of your `settings.json`.
 
 ```json
+"editor.renderLineHighlight": "all",
 "editor.matchBrackets": false,
 "subtleBrackets.style": {
     "borderWidth": "1px",
