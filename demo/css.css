@@ -1,5 +1,6 @@
 
 @value dark, light from "../../styles/colors.css";
+
 * {
   box-sizing: border-box;
 }

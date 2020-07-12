@@ -1,0 +1,154 @@
+{
+  "name": "Apex",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#202123",
+    "editor.foreground": "#fff",
+    // "editor.wrapGuide": "", <- find this?
+    "editorIndentGuide.background": "#adb5db4f", // Fade by some factor to distinguish active indent
+    "editorIndentGuide.activeBackground": "#adb5db99", // Fade this out, too
+    "editorWhitespace.foreground": "#adb5db99", // This looks like butt. Fade it out more.
+    "editorCursor.background": "#202123", // maybe make this a fade of the cursor color...
+    "editorGutter.background": "#202123",
+    "editorLineNumber.foreground": "#adb5db4f",
+    "editorLineNumber.activeForeground": "#e9ecef", // only applies when "editor.renderLineHighlight" is set to `all` or `gutter`
+    "editor.lineHighlightBackground": "#202123", // .cursor-line-no-selection @syntax-gutter-text-color-selected at fade 3%
+    "editorGutter.foldingControlForeground": "#495057",
+    "editorCursor.foreground": "#00baff",
+    "terminalCursor.foreground": "#00baff",
+    "editor.selectionBackground": "#f8f9fa11", // adjusted from #f8f9fa (value from spec, but too light in VSCode)
+    "searchEditor.findMatchBackground": "#202123",
+    "searchEditor.findMatchBorder": "#1862ab",
+    "editor.rangeHighlightBackground": "#202123",
+    "editor.findMatchBackground": "#202123",
+    "editor.findMatchBorder": "#1862ab",
+    "editor.findMatchHighlightBackground": "#202123",
+    "editor.findMatchHighlightBorder": "#329af0",
+    "editorBracketMatch.border": "#0097e8",
+    "scrollbarSlider.background": "#f8f9fa",
+    "scrollbar.shadow": "#f8f9fa",
+    "scrollbarSlider.hoverBackground": "#f8f9fa",
+    "scrollbarSlider.activeBackground": "#e9ecef",
+    "button.foreground": "#2f343a",
+    "button.background": "#202123", // do something with these... make them prettier/stand out more.
+    "button.hoverBackground": "#202123", // do something with these... make them prettier/stand out more.
+    "panel.border": "#212529",
+    "activityBar.border": "#212529",
+    "focusBorder": "#212529",
+    "statusBar.border": "#212529",
+    "gitDecoration.addedResourceForeground": "#212529",
+    "editorGutter.addedBackground": "#228ae699",
+    "gitDecoration.ignoredResourceForeground": "#868e96",
+    "gitDecoration.modifiedResourceForeground": "#12b886",
+    "editorGutter.modifiedBackground": "#228ae699",
+    "gitDecoration.deletedResourceForeground": "#fa5252",
+    "editorGutter.deletedBackground": "#e6498099",
+    "gitDecoration.untrackedResourceForeground": "#228ae6",
+    "editorSuggestWidget.background": "#202123",
+    "editorSuggestWidget.highlightForeground": "#212529", // this is the best I can do since I can't edit the border color of the autocomplete range.
+    "editorSuggestWidget.selectedBackground": "#f8f9fa", // currently there seems to be no way to add a border-bottom like Apex does on Atom
+    "quickInput.background": "#202123f2",
+    "quickInput.foreground": "#adb5db99",
+    "list.focusBackground": "#212529",
+    "list.focusForeground": "#fff",
+    "list.hoverBackground": "#212529",
+    "list.activeSelectionBackground": "#202123",
+    "statusBar.background": "#202123",
+    "statusBar.noFolderBackground": "#fff",
+    "statusBar.foreground": "#f8f9fa",
+    "statusBar.noFolderForeground": "#2f343a",
+    "tab.activeBorderTop": "#f8f9fa",
+    "tab.activeForeground": "#fff",
+    "tab.inactiveForeground": "#868e9699",
+    "tab.inactiveBackground": "#202123",
+    "tab.border": "#202123",
+    "editorGroupHeader.tabsBackground": "#202123",
+    "tree.indentGuidesStroke": "#202123",
+    "sideBar.background": "#202123",
+    "sideBar.border": "#212529",
+    "sideBar.foreground": "#f8f9fa",
+    "sidebar"
+    "selection.background": "#21252911",
+    "activityBar.background": "#202123",
+    "activityBar.foreground": "#202123",
+    "activityBar.activeBackground": "#f8f9fa",
+    "activityBar.inactiveForeground": "#adb5db99",
+    "activityBarBadge.background": "#00baff",
+    "activityBarBadge.foreground": "#fff",
+    "badge.background": "#00baff",
+    "badge.foreground": "#202123",
+    "input.background": "#2f343a",
+    "input.foreground": "#adb5db",
+    "dropdown.background": "#2f343a",
+    "dropdown.border": "#adb5db",
+    "dropdown.foreground": "#adb5db",
+    "settings.dropdownBorder": "#2f343a",
+    "settings.headerForeground": "#495057",
+    "titleBar.activeBackground": "#202123",
+    "titleBar.inactiveBackground": "#202123",
+    "titleBar.activeForeground": "#fff"
+  },
+  "tokenColors": [
+    {
+      "name": "Bolded tokens",
+      "scope": ["meta.selector", "meta.at-rule"],
+      "settings": {
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "String primitives",
+      "scope": "string",
+      "settings": {
+        "foreground": "#868e96",
+      }
+    },
+    {
+      "name": "Comments",
+      "scope": "comment",
+      "settings": {
+        "foreground": "#adb5db4f",
+      }
+    },
+    {
+      "name": "Bold",
+      "scope": "markup.bold",
+      "settings": {
+        "foreground": "#495057",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Italic",
+      "scope": "markup.italic",
+      "settings": {
+        "foreground": "#495057",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "CSS Selectors",
+      "scope": "meta.selector",
+      "settings": {
+        "foreground": "#f8f9fa",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "CSS Properties",
+      "scope": "meta.property-value",
+      "settings": {
+        "foreground": "#868e96",
+        "fontStyle": "" // this overrides the above `bold` style for css functions as values
+      }
+    },
+    {
+      "name": "Markdown heading marker",
+      "scope": "markup.heading",
+      "settings": {
+        "foreground": "#f8f9fa",
+        "fontStyle": "bold"
+      }
+    },
+  ]
+}

@@ -2,7 +2,7 @@
     "name": "apex",
     "displayName": "apex",
     "description": "Apex monochrome VSCode theme UI.",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "juliancoleman",
     "repository": "https://github.com/juliancoleman/vscode-apex-ui",
     "engines": {
@@ -17,6 +17,11 @@
                 "label": "Apex",
                 "uiTheme": "vs",
                 "path": "./themes/Apex-color-theme.json"
+            },
+            {
+                "label": "Apex Dark",
+                "uiTheme": "vs",
+                "path": "./themes/Apex Dark-color-theme.json"
             }
         ]
     }
