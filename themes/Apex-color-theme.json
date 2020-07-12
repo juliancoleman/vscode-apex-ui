@@ -51,7 +51,7 @@
     "editorSuggestWidget.highlightForeground": "#212529", // this is the best I can do since I can't edit the border color of the autocomplete range.
     "editorSuggestWidget.selectedBackground": "#f8f9fa", // currently there seems to be no way to add a border-bottom like Apex does on Atom
     "quickInput.background": "#f8f9faf2",
-    "quickInput.foreground": "#adb5db",
+    "quickInput.foreground": "#868e96",
     "list.focusBackground": "#fff",
     "list.focusForeground": "#212529",
     "list.inactiveSelectionBackground": "#fff",
