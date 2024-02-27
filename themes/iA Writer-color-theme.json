@@ -1,102 +1,223 @@
+/**
+ * Main colors:
+ * 
+ * THE cyan color - #00b2ff
+ * cyan alt (shorthand) - #0cf
+ * cyan used in menu items - #65b5e3
+ * picton blue - #2e96ff
+ * cornflower blue - #6193ff
+ * toolbox purple - #928aff
+ * faded blue (purple-pink, really) - #a380ff
+ * soft purple (almost magenta) - #c6f
+ * magenta - #ff52e8
+ * neon fuchsia - #ff3dc8
+ * light crimson - #ff529a
+ * light red - #ff3d6e
+ * light orange - #ff615c
+ * lighter orange - #ff8157
+ * yellow - #f5a40a
+ * lighter yellow - #fab500
+ * 
+ * gray - #7a7a78
+ * syntax brown - #9c6622
+ * syntax red - #bc5029
+ * syntax purple - #a557a0
+ * syntax blue - #4477b4
+ * syntax green - #51802f
+ *
+ * Grayscale colors derived from the website and dropper
+ * tool used on various UI elements within images.
+ * 
+ * light mode background color - #f6f6f7
+ * dark mode sidebar color - #0c0c0c
+ * dark mode background color - #181818
+ * dark mode background lightened 5% - #252525
+ * dark mode background lightened 10% - #323232
+ * dark mode background lightened 20% - #4b4b4b (comments)
+ * dark mode background lightened 25% - #585858
+ * dark mode background lightened 35% - #717171
+ * dark mode background lightened 40% - #7e7e7e (borders)
+ * dark mode background lightened 60% - #b1b1b1 (strings; decided by package author)
+ * dark mode background lightened 70% - #cbcbcb (css property values; decided by package author)
+ * dark mode background lightened 75% - #d7d7d7
+ * dark mode background lightened 85% - #f1f1f1 (css properties; decided by package author)
+ */
+
 {
   "name": "Apex",
   "type": "dark",
+
   "colors": {
-    "editor.background": "#141414",
-    "editor.foreground": "#fff",
-    // "editor.wrapGuide": "", <- find this?
-    "editorIndentGuide.background": "#6968687f", // Fade by some factor to distinguish active indent
-    "editorIndentGuide.activeBackground": "#696868", // Fade this out, too
-    "editorWhitespace.foreground": "#6968687f", // This looks like butt. Fade it out more.
-    "editorCursor.background": "#141414", // maybe make this a fade of the cursor color...
-    "editorGutter.background": "#141414",
-    "editorLineNumber.foreground": "#adb5db4f",
-    "editorLineNumber.activeForeground": "#e9ecef", // only applies when "editor.renderLineHighlight" is set to `all` or `gutter`
-    "editor.lineHighlightBackground": "#141414", // .cursor-line-no-selection @syntax-gutter-text-color-selected at fade 3%
-    "editorGutter.foldingControlForeground": "#495057",
-    "editorCursor.foreground": "#00b1f3",
-    "terminalCursor.foreground": "#00b1f3",
-    "editor.selectionBackground": "#f8f9fa11", // adjusted from #f8f9fa (value from spec, but too light in VSCode)
-    "searchEditor.findMatchBackground": "#141414",
-    "searchEditor.findMatchBorder": "#1862ab",
-    "editor.rangeHighlightBackground": "#141414",
-    "editor.findMatchBackground": "#141414",
-    "editor.findMatchBorder": "#1862ab",
-    "editor.findMatchHighlightBackground": "#141414",
-    "editor.findMatchHighlightBorder": "#329af0",
-    "editorBracketMatch.border": "#0097e8",
-    "scrollbarSlider.background": "#2f2f2f",
-    "scrollbar.shadow": "#202123",
-    "scrollbarSlider.hoverBackground": "#2f2f2f",
-    "scrollbarSlider.activeBackground": "#2f2f2f",
-    "button.foreground": "#2f343a",
-    "button.background": "#141414", // do something with these... make them prettier/stand out more.
-    "button.hoverBackground": "#141414", // do something with these... make them prettier/stand out more.
-    "panel.border": "#212529",
-    "activityBar.border": "#212529",
-    "focusBorder": "#212529",
-    "statusBar.border": "#212529",
-    "gitDecoration.addedResourceForeground": "#212529",
-    "editorGutter.addedBackground": "#228ae699",
-    "gitDecoration.ignoredResourceForeground": "#868e96",
-    "gitDecoration.modifiedResourceForeground": "#12b886",
-    "editorGutter.modifiedBackground": "#228ae699",
-    "gitDecoration.deletedResourceForeground": "#fa5252",
-    "editorGutter.deletedBackground": "#e6498099",
-    "gitDecoration.untrackedResourceForeground": "#228ae6",
-    "editorSuggestWidget.background": "#202020",
-    "editorSuggestWidget.foreground": "#f8f9fa99",
-    "editorSuggestWidget.highlightForeground": "#f8f9fa", // this is the best I can do since I can't edit the border color of the autocomplete range.
-    "editorSuggestWidget.selectedBackground": "#212529", // currently there seems to be no way to add a border-bottom like Apex does on Atom
-    "quickInput.background": "#202020",
-    "quickInput.foreground": "#adb5db99",
-    "list.focusBackground": "#212529",
-    "list.focusForeground": "#fff",
-    "list.hoverBackground": "#212529",
-    "list.activeSelectionBackground": "#141414",
-    "list.inactiveSelectionBackground": "#141414",
-    "statusBar.background": "#141414",
-    "statusBar.noFolderBackground": "#fff",
-    "statusBar.foreground": "#f8f9fa",
-    "statusBar.noFolderForeground": "#2f343a",
-    "tab.activeBorderTop": "#f8f9fa",
-    "tab.activeForeground": "#fff",
-    "tab.inactiveForeground": "#868e9699",
-    "tab.inactiveBackground": "#141414",
-    "tab.border": "#141414",
-    "editorGroupHeader.tabsBackground": "#141414",
-    "tree.indentGuidesStroke": "#141414",
-    "sideBar.background": "#141414",
-    "sideBar.border": "#212529",
-    "sideBar.foreground": "#f8f9fa",
-    "selection.background": "#f8f9fa30",
-    "activityBar.background": "#141414",
-    "activityBar.foreground": "#f8f9fa",
-    "activityBar.activeBackground": "#212529",
-    "activityBar.inactiveForeground": "#adb5db99",
-    "activityBarBadge.background": "#00b1f3",
-    "activityBarBadge.foreground": "#fff",
-    "badge.background": "#00b1f3",
-    "badge.foreground": "#141414",
-    "input.background": "#2f2f2f",
-    "input.foreground": "#adb5db",
-    "dropdown.background": "#2f2f2f",
-    "dropdown.border": "#adb5db",
-    "dropdown.foreground": "#adb5db",
-    "settings.dropdownBorder": "#2f343a",
-    "settings.headerForeground": "#495057",
-    "titleBar.activeBackground": "#141414",
-    "titleBar.inactiveBackground": "#141414",
+    ///// General UI
+
+    // Title
+    "titleBar.activeBackground": "#181818",
+    "titleBar.inactiveBackground": "#181818",
     "titleBar.activeForeground": "#fff",
-    "sideBarSectionHeader.background": "#141414",
-    "sideBarSectionHeader.foreground": "#868e96",
-    "sideBarSectionHeader.border": "#202020",
-    "editorWidget.background": "#202020"
+    "titleBar.border": "#181818",
+
+    // Command palette
+    "quickInput.background": "#585858",
+    "quickInput.foreground": "#fff",
+    "quickInputList.focusBackground": "#65b5e3",
+    "quickInputList.focusForeground": "#fff",
+    "quickInputList.focusIconForeground": "#fff",
+    "quickInputTitle.background": "#ff0000", // does nothing
+
+    // Lists (incl. tree view, source control)
+    "list.hoverBackground": "#65b5e3",
+    "list.hoverForeground": "#fff", // this doesn't work when source control features are enabled...
+    "list.focusAndSelectionOutline": "#2e96ffaa",
+    "list.activeSelectionForeground": "#fff",
+    "list.activeSelectionBackground": "#2e96ffaa",
+    "list.inactiveSelectionBackground": "#252525",
+    "list.inactiveSelectionForeground": "#fff",
+    "list.inactiveFocusOutline": "#323232",
+    "list.inactiveFocusBackground": "#323232",
+    "list.activeSelectionIconForeground": "#fff",
+    "list.inactiveSelectionIconForeground": "#fff",
+
+    "sideBar.background": "#0c0c0c",
+    "sideBar.border": "#18181800",
+    "sideBar.foreground": "#fff",
+    "sideBarSectionHeader.background": "#181818",
+    "sideBarSectionHeader.foreground": "#fff",
+    "sideBarSectionHeader.border": "#323232",
+
+    "dropdown.border": "#323232",
+    "dropdown.foreground": "#fff",
+    "dropdown.background": "#323232",
+
+    "settings.dropdownBorder": "#323232",
+    "settings.headerForeground": "#2e96ff",
+
+    // Inputs
+    "input.background": "#323232",
+    "input.foreground": "#fff",
+    "input.border": "#323232",
+    "input.placeholderForeground": "#7a7a78",
+    "selection.background": "#fff",
+
+    // Status bar
+    "statusBar.background": "#181818",
+    "statusBar.foreground": "#717171",
+    "statusBar.noFolderBackground": "#181818",
+    "statusBar.noFolderForeground": "#fff",
+    "statusBar.noFolderBorder": "#181818",
+    "statusBar.debuggingBackground": "#ff615c",
+    "statusBar.focusBorder": "#181818",
+    "statusBar.border": "#181818",
+
+    // Links
+    "textLink.foreground": "#2e96ff",
+    "textLink.activeForeground": "#2e96ff",
+
+    // Buttons
+    "button.foreground": "#fff",
+    "button.background": "#00b2ff",
+    "button.hoverBackground": "#0cf",
+    "button.border": "#202020",
+
+    // Badges
+    "badge.background": "#00b2ff",
+    "badge.foreground": "#181818",
+
+    // Scrollbars
+    "scrollbarSlider.background": "#323232aa",
+    "scrollbar.shadow": "#252525",
+    "scrollbarSlider.hoverBackground": "#585858aa",
+    "scrollbarSlider.activeBackground": "#58585866",
+
+    ///// Editor UI
+    "editor.background": "#181818",
+    "editor.foreground": "#fff",
+    "editor.selectionBackground": "#252525",
+    "editor.lineHighlightBackground": "#00b2ff06",
+    "editor.rangeHighlightBackground": "#181818aa",
+    "editor.findMatchBackground": "#6193ff10", // cmdCtrl+f background active
+    "editor.findMatchBorder": "#6193ff", // cmdCtrl+f background active
+    "editor.findMatchHighlightBackground": "#f5a40a33", // cmdCtrl+f background inactive
+    "editor.findMatchHighlightBorder": "#fab50066", // cmdCtrl+f border inactive
+
+    // Find/replace
+    "editorWidget.background": "#585858",
+    "editorWidget.border": "#7e7e7e",
+    "editorWidget.foreground": "#fff",
+
+    // Suggest widget
+    "editorSuggestWidget.background": "#585858",
+    "editorSuggestWidget.foreground": "#ccc",
+    "editorSuggestWidget.highlightForeground": "#fff",
+    "editorSuggestWidget.selectedBackground": "#65b5e3",
+    "editorSuggestWidget.border": "#7e7e7e",
+    "editorSuggestWidget.focusHighlightForeground": "#fff",
+    "editorSuggestWidget.selectedForeground": "#fff", // the text off to the right of the symbol
+    "editorSuggestWidget.selectedIconForeground": "#fff",
+    "editorSuggestWidgetStatus.foreground": "#fff", // does nothing
+
+    // Cursor
+    "editorCursor.foreground": "#00b2ff",
+    "editorBracketMatch.border": "#00b2ff",
+
+    // Indent guides
+    "editorIndentGuide.background1": "#323232",
+    "editorIndentGuide.activeBackground1": "#585858",
+
+    // Whitespace
+    "editorWhitespace.foreground": "#252525",
+
+    // Gutters
+    "editorGutter.background": "#181818",
+    "editorGutter.foldingControlForeground": "#585858",
+
+    // Line numbers
+    "editorLineNumber.foreground": "#585858",
+    "editorLineNumber.activeForeground": "#fff", // only applies when "editor.renderLineHighlight" is set to `all` or `gutter`
+
+    ///// Tab UI
+    "tab.activeBorderTop": "#00b2ff",
+    "tab.activeForeground": "#fff",
+    "tab.inactiveForeground": "#fff",
+    "tab.inactiveBackground": "#181818",
+    "tab.border": "#181818",
+    "tab.activeBackground": "#232323",
+    "editorGroupHeader.tabsBackground": "#181818",
+
+    ///// Source control UI
+
+    // Tree view
+    "gitDecoration.untrackedResourceForeground": "#2e96ff",
+    "gitDecoration.ignoredResourceForeground": "#585858",
+    "gitDecoration.modifiedResourceForeground": "#fab500",
+    "gitDecoration.deletedResourceForeground": "#ff3d6e",
+
+    // Editor
+    "editorGutter.addedBackground": "#2e96ff66",
+    "editorGutter.modifiedBackground": "#fab50066",
+    "editorGutter.deletedBackground": "#ff3d6e66",
+
+    ///// Activity bar UI
+    "activityBar.background": "#181818",
+    "activityBar.foreground": "#fff",
+    "activityBar.activeBackground": "#252525",
+    "activityBar.inactiveForeground": "#585858",
+    "activityBarBadge.background": "#00baff",
+    "activityBarBadge.foreground": "#fff",
+    "activityBar.activeBorder": "#ff0000",
+    "activityBar.activeFocusBorder": "#ff0000",
+
+    ///// Panel UI
+    "panel.border": "#7e7e7e",
+    "terminalCursor.foreground": "#00b2ff",
+
+    // Activity bar
+    "activityBar.border": "#181818",
+    "focusBorder": "#181818",
   },
   "tokenColors": [
     {
       "name": "Bolded tokens",
-      "scope": ["meta.selector", "meta.at-rule"],
+      "scope": ["meta.selector", "meta.at-rule", "comment", "markup.bold"],
       "settings": {
         "fontStyle": "bold"
       }
@@ -105,14 +226,14 @@
       "name": "String primitives",
       "scope": "string",
       "settings": {
-        "foreground": "#868e96",
+        "foreground": "#b1b1b1",
       }
     },
     {
       "name": "Comments",
       "scope": "comment",
       "settings": {
-        "foreground": "#696868",
+        "foreground": "#4b4b4b",
       }
     },
     {
@@ -120,7 +241,6 @@
       "scope": "markup.bold",
       "settings": {
         "foreground": "#495057",
-        "fontStyle": "bold"
       }
     },
     {
@@ -132,19 +252,24 @@
       }
     },
     {
-      "name": "CSS Selectors",
-      "scope": "meta.selector",
+      "name": "CSS Properties",
+      "scope": "support.type.property-name",
       "settings": {
-        "foreground": "#f8f9fa",
-        "fontStyle": "bold"
+        "foreground": "#f1f1f1"
       }
     },
     {
-      "name": "CSS Properties",
+      "name": "CSS Property Values",
       "scope": "meta.property-value",
       "settings": {
-        "foreground": "#868e96",
-        "fontStyle": "" // this overrides the above `bold` style for css functions as values
+        "foreground": "#b1b1b1"
+      }
+    },
+    {
+      "name": "CSS Property Values as functions",
+      "scope": ["support.function.misc", "punctuation.section.function.begin.bracket.round.css", "punctuation.section.function.end.bracket.round.css"],
+      "settings": {
+        "foreground": "#fff"
       }
     },
     {
@@ -154,6 +279,11 @@
         "foreground": "#f8f9fa",
         "fontStyle": "bold"
       }
-    },
-  ]
+    }
+  ],
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    // "variable": { "bold": true },
+    // "class": { "bold": true },
+  }
 }
